@@ -1,0 +1,30 @@
+# Ignore les fichiers sensibles
+*.pem
+*.key
+*.crt
+*.env
+*.p12
+*.jks
+*.der
+
+# Ignore les tokens et notes temporaires
+notes.md
+secret.txt
+
+# Ignore l'environnement virtuel Python
+env/
+venv/
+ENV/
+.venv/
+
+# Ignore les fichiers spécifiques à macOS, VSCode, etc.
+.DS_Store
+.vscode/
+*.swp
+
+# Ignore les fichiers de log
+*.log
+
+# Ignore les fichiers Python compilés
+__pycache__/
+*.py[cod]
