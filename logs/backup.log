@@ -1,0 +1,6 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=********** --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false ********** | /usr/bin/gzip >> ./erpnext.localhost/private/backups/20250423_120005-erpnext_localhost-database.sql.gz
+
+Backup Summary for erpnext.localhost at 2025-04-23 12:00:10.750969
+Config  : /home/racedy/frappe-bench/sites/erpnext.localhost/private/backups/20250423_120005-erpnext_localhost-site_config_backup.json 116.0B
+Database: /home/racedy/frappe-bench/sites/erpnext.localhost/private/backups/20250423_120005-erpnext_localhost-database.sql.gz 783.4KiB
+Backup for Site erpnext.localhost has been successfully completed

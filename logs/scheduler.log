@@ -1,0 +1,38 @@
+2025-04-23 11:16:16,553 ERROR scheduler Exception in Enqueue Events for Site erpnext.localhost
+Traceback (most recent call last):
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 161, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 174, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/database/database.py", line 890, in get_single_value
+    frappe.throw(
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/utils/messages.py", line 145, in throw
+    msgprint(
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/utils/messages.py", line 106, in msgprint
+    _raise_exception()
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/utils/messages.py", line 57, in _raise_exception
+    raise exc
+frappe.exceptions.ValidationError: Field enable_scheduler does not exist on System Settings
+2025-04-23 11:20:17,678 ERROR scheduler Exception in Enqueue Events for Site erpnext.localhost
+Traceback (most recent call last):
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 161, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 174, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/database/database.py", line 890, in get_single_value
+    frappe.throw(
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/utils/messages.py", line 145, in throw
+    msgprint(
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/utils/messages.py", line 106, in msgprint
+    _raise_exception()
+  File "/home/racedy/frappe-bench/apps/frappe/frappe/utils/messages.py", line 57, in _raise_exception
+    raise exc
+frappe.exceptions.ValidationError: Field enable_scheduler does not exist on System Settings

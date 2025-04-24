@@ -1,0 +1,7 @@
+{
+ "db_name": "eval2",
+ "db_password": "eval2",
+ "db_type": "mariadb",
+ "db_user": "eval2",
+ "top_bar_items": "[]"
+}
